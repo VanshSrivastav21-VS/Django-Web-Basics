@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <input type="text" 
+        name="username" 
+        id="username" 
+        placeholder="username"
+        required
+        maxlength="20"
+        size="50"
+        pattern="[A-Za-z0-9]+">
+        <br>
+        <input type="email" 
+        placeholder="email"
+        name="email" 
+        id="email">
+        <br>
+        <input type="tel" 
+        name="phone"
+        placeholder="phone" 
+        id="phone">
+        <br>
+        <input type="date" 
+        placeholder="datetime-local"
+        name="dob" 
+        id="dob">
+        <br>
+        <input type="datetime-local" 
+        name="admissiondate" 
+        id="admitdate">
+        <br>
+        <input type="file" 
+        name="avatar" 
+        id="avatar">
+        <br>
+        <input type="checkbox" 
+        name="agree" 
+        id="agree">
+        Agree to our terms and conditions?
+        <br>
+        <p>Your fav fruit</p>
+        <input type="radio"
+         name="ff" 
+         id="ff"
+         value="mango">mango
+         <br>
+         <input type="radio" 
+         name="ff2" 
+         id="ff2"
+         value="Apple">Apple
+         <br>
+         <input type="radio" 
+         name="ff3" 
+         id="ff3"
+         value="Pineapple">Pineapple
+         <br>
+         <p>kitna padhe ho</p>
+         <select name="education" 
+         id="education">
+        <option value="1">Graduate</option>
+        <option value="2">Post-Graduate</option>
+        <option value="3">Doctrate</option>
+        <option value="4">Intermediate</option>
+        <option value="5">Highschool</option>
+        <option value="6">5th fail</option>
+        </select>
+        <br>
+        <p>Rate your skill</p>
+        <input type="range" 
+        name="rating" 
+        id="rating">
+        <input type="hidden" 
+        name="secret" 
+        id="kuch raaz nahi hai isme">
+        <input type="submit" 
+        value="send">
+    </form>
+</body>
+</html>
