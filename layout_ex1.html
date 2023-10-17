@@ -20,7 +20,7 @@
     header{
        padding: 0.5rem;
     }
-    /* nav{
+    /* menu {
         background-color: #fff;
     } */
     .menu{
@@ -29,25 +29,46 @@
         gap: 1rem;
     }
     .menu a{
-     color: whitesmoke;
+     color: #fff;
      text-decoration: none;
      font: 1.2rem;
-     background-color: black;
-     
-    }
+     }
     .menu a:hover{
-        color: yellow;
+        color: rgb(0,64,255);
     }
     main{
         min-height: 80vh;
-        
+        width: min(75ch, 90%);
+        margin-inline: auto;
     }
     .hero-heading{
-        font-size: 2rem;
+        font-size: 3rem;
         line-height: 1.1;
         margin-bottom: 5rem;
-        margin-left: 1rem;
         margin-top: 3rem;
+    }
+    .text{
+        font-size: 1.25rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+    .itemlist{
+        list-style-image: url(static/images/arrow\ \(1\).png);
+        margin-left: 1.35rem;
+        padding: .5rem 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+    } 
+    .itemlist{
+        margin-bottom: 1rem;
+    }
+    footer{
+        background-color: saddlebrown;
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+        color: rgb(0,64,255);
+        font-weight: bold;
     }
     </style>
 </head>
@@ -59,23 +80,23 @@
                 <li><a href="#">Layout 1</a></li>
                 <li><a href="#">layout 2</a></li>
                 <li><a href="#">layout 3</a></li>
-             </ul>
+            </ul>
         </nav>
     </header>
     <main>
         <section>
             <article>
                 <h2 class="hero-heading">Welcom to layout in CSS</h2>
-                <p>
-                    TOday we are going to see example of layout in CSS.
+                <p class="text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim excepturi nobis provident possimus incidunt quae nihil. Explicabo cupiditate nisi consequuntur ipsum voluptatem delectus fuga tempora quae excepturi eaque, repellendus cum repudiandae mollitia voluptatum molestias reprehenderit nostrum ipsam? Vel nesciunt quos, quis magni dolor veritatis quia laborum error quas natus soluta excepturi alias iure aliquid sapiente nam, aperiam cumque illum harum? Error molestiae vitae, sequi sint, fugit, laborum dolore architecto mollitia placeat ratione nostrum quaerat. Provident soluta earum doloribus nulla blanditiis! Aliquam repellat esse debitis nihil quas reiciendis, natus repudiandae deleniti earum explicabo consequuntur quo maxime vel dolor, quibusdam, ex omnis.
                 </p>
-                <ul>
+                <ul class="itemlist">
                     <li>Grids</li>
-                    <li>Flexbox</li>
+                    <li>Flex.hbox</li>
                     <li>Mixing both together</li>
                 </ul>
-                <p>
-                    This is very useful for creating simple layouts
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, aperiam quidem illo quaerat quia cum dolorum quod, est facere labore voluptas distinctio! Delectus voluptatibus consequuntur iure debitis facere nulla earum officia rem, culpa, tempore vero impedit in, numquam quod saepe. Molestiae est labore necessitatibus repellat veritatis obcaecati delectus ex provident? 
                 </p>
             </article>
         </section>
