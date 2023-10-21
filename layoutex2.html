@@ -11,24 +11,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: rgb(18,23,40);
     color: white;
 }
+
 section{
     min-height: 90vh; 
     /*viewport height */
     max-width: 90%;
     margin-inline: auto;
-    padding: 4rem;
 }
+
 header{
-    padding-top: 3rem;
+    padding-top: 4.5rem;
 }
+
 .logo{
     width: 3rem;
     height: 3rem;
 }
+
 .nav-link{
     color: white;
     text-decoration: none;
@@ -39,6 +43,7 @@ header{
     gap: 1rem;
     align-items: center;
 }
+
 .content{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -46,20 +51,54 @@ header{
     align-items: center;
     height: 50vh;
 }
+
 .hero{
-   display: grid;
-   justify-items: center; 
+   flex-wrap: wrap;
+   align-items: center; 
 }
+
 .hero img{
-    width: 500px;
+    width: 600px;
     border-radius: 5rem;
     object-fit: cover;
     height: 600px;
+    box-shadow: 20px 5px 100px #00f;
 }
+.col{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+}
+
 .col h1{
-    font-size: 2rem;
+    font-size: 8rem;
+    font-family: sans-serif;
+    line-height: 1;
 }
-.col button
+.tittle-wrapper{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.col button{
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    width: 250px;
+    font-weight: bolder;
+    margin-top: 6rem;
+    background-image: linear-gradient(120deg, #82058a, #ec1e3d);
+}
+
 
 
     </style>
@@ -76,8 +115,12 @@ header{
             </header>
             <div class="content">
                 <div class="col">
+                    <div class="tittle-wrapper">
                     <h1>Always Stay Connected</h1>
+                </div>
+                <div class="btn-wrapper">
                     <button>Learn More</button>
+                </div>
                 </div>
                 <div class="col hero">
                     <img src="static/images/image1.jpg" alt="image1">
